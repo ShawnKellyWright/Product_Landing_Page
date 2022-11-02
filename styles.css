@@ -1,0 +1,32 @@
+/* The following is custom font - same as the US TV show The Office logo - which is now set as a global font*/
+@font-face {
+    font-family: "AmericanTypewriter_Medium";
+    src: url(AmericanTypewriter_Medium.ttf);
+}
+
+header > div {
+    text-align: center;
+    margin: 30px;
+}
+
+/* he following is the Nav styling at top of screen */
+#nav-bar > ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    font-family: "AmericanTypewriter_Medium", sans-serif;
+}
+
+/* The following is the embedded YouTube Video player styling */
+.video-container {
+    text-align: center;
+}
