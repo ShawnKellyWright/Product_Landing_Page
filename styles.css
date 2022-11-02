@@ -4,12 +4,17 @@
     src: url(AmericanTypewriter_Medium.ttf);
 }
 
+body {
+    color: black;
+    font-family: "AmericanTypewriter_Medium", sans-serif;
+}
+
 header > div {
     text-align: center;
     margin: 30px;
 }
 
-/* he following is the Nav styling at top of screen */
+/* The following is the Nav styling at top of screen */
 #nav-bar > ul {
     list-style-type: none;
     text-decoration: none;
@@ -23,10 +28,20 @@ header > div {
 li > a {
     text-decoration: none;
     color: black;
-    font-family: "AmericanTypewriter_Medium", sans-serif;
 }
 
-/* The following is the embedded YouTube Video player styling */
+a:hover {
+    color: #9b2238;
+}
+
+/* The following is the Video player styling */
 .video-container {
     text-align: center;
+}
+
+#pricing   {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    margin: 50px;
 }
