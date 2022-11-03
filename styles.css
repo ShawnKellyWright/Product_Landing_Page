@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 :root {
     --beet-color1: #b42c45;
     --beet-color2: #952138;
     --dwight-shirt1: #c8ae4f;
-    --dwight-shirt2: ##8e6c51;
+    --dwight-shirt2: #8e6c51;
 }
 
 /* The following is custom font - same as the US TV show The Office logo - which is now set as a global font*/
@@ -14,27 +20,40 @@
 body {
     color: black;
     font-family: "AmericanTypewriter_Medium", sans-serif;
+    text-align: center;
 }
+
+#page-wrapper {
+    position: relative;
+  }
 
 header > div {
     text-align: center;
     margin: 30px;
+    
+}
+
+li {
+    list-style-type: none;
 }
 
 /* The following is the Nav styling at top of screen */
+#nav-bar {
+    background-color: var(--dwight-shirt2);
+    padding: .1em;
+}
+
 #nav-bar > ul {
-    list-style-type: none;
     text-decoration: none;
     margin: 40px;
     display: grid;
     grid-template-columns: auto auto auto;
     place-items: center;
-    
 }
 
 li > a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 a:hover {
@@ -44,7 +63,58 @@ a:hover {
 /* The following is the Video player styling */
 .video-container {
     text-align: center;
+    width: 100%;
+    margin-top: 75px;
 }
+
+/* following is image of jar of beets with custom Schrute Farm Beets logo I made */
+.jar-image {
+    margin: 75px;
+}
+
+.product {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 20px; 
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 4);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+
+@media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+/* .product-header {
+    background-color: var(--beet-color1);
+    color: #fff
+} */
+
+
+.product > .product-header {
+    background-color: var(--beet-color1);
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 
 #pricing   {
     display: grid;
@@ -53,9 +123,16 @@ a:hover {
     margin: 50px;
 }
 
+/* Dwight Schrute quote section */
+blockquote {
+    margin: 50px;
+    font-size: x-large;
+}
+
 /* following is footer section styling */
 footer {
     text-align: center;
     /* background-color: #c8ae4f; Dwight Schrute shirt color mustard */
     background-color: #8e6c51;
+    padding: 30px;
 }
