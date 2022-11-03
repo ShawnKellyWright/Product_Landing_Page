@@ -1,3 +1,10 @@
+:root {
+    --beet-color1: #b42c45;
+    --beet-color2: #952138;
+    --dwight-shirt1: #c8ae4f;
+    --dwight-shirt2: ##8e6c51;
+}
+
 /* The following is custom font - same as the US TV show The Office logo - which is now set as a global font*/
 @font-face {
     font-family: "AmericanTypewriter_Medium";
@@ -44,4 +51,11 @@ a:hover {
     grid-template-columns: auto auto auto auto;
     place-items: center;
     margin: 50px;
+}
+
+/* following is footer section styling */
+footer {
+    text-align: center;
+    /* background-color: #c8ae4f; Dwight Schrute shirt color mustard */
+    background-color: #8e6c51;
 }

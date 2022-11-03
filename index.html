@@ -42,13 +42,13 @@
         <section>
             <!-- following is the video player section of Schrute Beet Farm -->
             <div class="video-container">
-                <video src="images/Schrute_Beet_Farm.mp4" width="640px" height="360px" controls
+                <video id="video" src="images/Schrute_Beet_Farm.mp4" width="640px" height="360px" controls
                     type="video/mp4"></video>
             </div>
         </section>
         <section id="pricing">
             <div class="product" id="small-jar">
-                <div class="product-header"><strong>Jar of Beets</strong></div>
+                <div class="product-header"><strong>Small size Jar of Beets</strong></div>
                 <h2 class="product-h2">$10</h2>
                 <ol>
                     <li></li>
@@ -58,7 +58,7 @@
                 </ol>
             </div>
             <div class="product" id="medium-jar">
-                <div class="product-header"><strong>Jar of Beets</strong></div>
+                <div class="product-header"><strong>Medium size Jar of Beets</strong></div>
                 <h2 class="product-h2">$15</h2>
                 <ol>
                     <li></li>
@@ -88,13 +88,21 @@
                 </ol>
             </div>
         </section>
+        <section class="container">
+            <form id="form" action="https://formsubmit.co/shawncodewright@gmail.com" method="POST">
+                <label for="email">Email:<input name="email" id="email" type="email"
+                        placeholder="Enter your email address" required></label>
+                <label for=""></label>
+                <button type="submit">Send</button>
+            </form>
+        </section>
         <footer>
             <ul>
                 <li></li>
                 <li></li>
                 <li></li>
-            </ul>
-            <p>&copy;Copyright shawnCodeWright 2022</p>
+            </ul>S
+            <p>&copy;Copyright 2022 shawnCodeWright</p>
         </footer>
     </main>
     <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script> <!-- TODO: Add Modernizr js -->
