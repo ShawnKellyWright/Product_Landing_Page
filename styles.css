@@ -17,35 +17,38 @@
     src: url(AmericanTypewriter_Medium.ttf);
 }
 
+/* following is global styling for page */
 body {
     color: black;
     font-family: "AmericanTypewriter_Medium", sans-serif;
     text-align: center;
 }
 
-#page-wrapper {
-    position: relative;
-  }
-
-header > div {
-    text-align: center;
-    margin: 30px;
-    
+li {
+  list-style-type: none;
 }
 
-li {
-    list-style-type: none;
+/* Main logo Schrute Farm Beets */
+.logo-div {
+    display: flexbox;
+    justify-content: center;
+    margin: 30px;
+} 
+
+.main-logo {
+  width: auto;
+  height: auto;
+  max-width: 70%;
 }
 
 /* The following is the Nav styling at top of screen */
 #nav-bar {
     background-color: var(--dwight-shirt2);
-    padding: .1em;
+    padding: 1px;
 }
 
-#nav-bar > ul {
+ ul {
     text-decoration: none;
-    color: white;
     text-shadow:
     -1px -1px 0 #000,
     0   -1px 0 #000,
@@ -55,23 +58,31 @@ li {
     0    1px 0 #000,
     -1px  1px 0 #000,
     -1px  0   0 #000;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
     margin: 40px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    place-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 li > a {
     text-decoration: none;
-    font-size: x-large;
-    color: #fff;
+    color: #fff
 }
 
 a:hover {
     color: #9b2238;
 }
 
+@media screen and (max-width: 350px) {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+  
 /* The following is the Video player styling */
 .video-container {
     text-align: center;
@@ -124,10 +135,11 @@ a:hover {
     -1px  1px 0 #000,
     -1px  0   0 #000;
     letter-spacing: 2px;
-    padding: 15px 0;
+    padding: 15px 15px;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
+    
   }
 
 #pricing   {
@@ -148,5 +160,16 @@ footer {
     text-align: center;
     /* background-color: #c8ae4f; Dwight Schrute shirt color mustard */
     background-color: #8e6c51;
-    padding: 30px;
+    color: #fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    0   -1px 0 #000,
+    1px -1px 0 #000,
+    1px  0   0 #000,
+    1px  1px 0 #000,
+    0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+    letter-spacing: 2px;
+    padding: 20px;
 }
