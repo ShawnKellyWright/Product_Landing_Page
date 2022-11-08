@@ -1,9 +1,9 @@
-My Fourth freeCodeCamp.org Certification Project under Responsive Web Design course.
-The following is the Objective:
-Build a Product Landing Page, which I chose Schrute Farm Beets as fictional Product Landing Page. (Fan of US TV Show The Office)
-Objective: Build an app that is functionally similar to https://product-landing-page.freecodecamp.rocks
+My Fourth freeCodeCamp.org Certification Project under Responsive Web Design course.<br>
+The following is the Objective:<br>
+Build a Product Landing Page, which I chose Schrute Farm Beets as fictional Product Landing Page. (Fan of US TV Show The Office)<br>
+Objective: Build an app that is functionally similar to https://product-landing-page.freecodecamp.rocks<br>
 
-User Stories:
+User Stories:<br>
 
 1. Your product landing page should have a header element with a corresponding id="header"
 2. You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
