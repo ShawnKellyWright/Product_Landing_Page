@@ -75,6 +75,7 @@ a:hover {
     color: #9b2238;
 }
 
+/* following changes navbar li items to column if screen is smaller than 350px */
 @media screen and (max-width: 350px) {
   ul {
     display: flex;
@@ -85,14 +86,24 @@ a:hover {
   
 /* The following is the Video player styling */
 .video-container {
-    text-align: center;
-    width: 100%;
-    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+     margin: 50px;
+}
+
+video {
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 100%;
+  min-width: 300px;
 }
 
 /* following is image of jar of beets with custom Schrute Farm Beets logo I made */
-.jar-image {
-    margin: 75px;
+.jar-container {
+    display: flex;
+    justify-content: center;
+    margin: ;
 }
 
 .product {
