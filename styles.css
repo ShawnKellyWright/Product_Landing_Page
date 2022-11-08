@@ -14,7 +14,7 @@
 /* The following is custom font - same as the US TV show The Office logo - which is now set as a global font*/
 @font-face {
     font-family: "AmericanTypewriter_Medium";
-    src: url(AmericanTypewriter_Medium.ttf);
+    src: url(fonts/AmericanTypewriter_Medium.ttf);
 }
 
 /* following is global styling for page */
@@ -38,7 +38,7 @@ li {
 .main-logo {
   width: auto;
   height: auto;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 /* The following is the Nav styling at top of screen */
@@ -63,7 +63,7 @@ li {
     margin: 40px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 li > a {
@@ -79,10 +79,11 @@ a:hover {
 @media screen and (max-width: 350px) {
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
+    gap: 10px
   }
-}
+} 
   
 /* The following is the Video player styling */
 .video-container {
@@ -136,18 +137,6 @@ video {
     margin: 2px;
   }
 
-/* @media (max-width: 800px) {
-    #pricing {
-      flex-direction: column;
-    }
-    .product {
-      max-width: 300px;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 10px;
-    }
-  } */
-
 .product > .product-header {
     background-color: var(--beet-color1);
     color: white;
@@ -168,21 +157,11 @@ video {
     
   }
 
-/* #pricing   {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    place-items: center;
-    margin: 50px;
-} */
-
 /* Dwight Schrute quote section */
 .quote {
   display: flex;
   justify-content: center;
-}
-
-hr {
-  
+  margin: 30px;
 }
 
 blockquote {
@@ -190,10 +169,41 @@ blockquote {
     font-size: x-large;
 }
 
+/* following is form styling */
+form {
+  margin: 30px;
+  font-size: x-large
+}
+
+/* following is funny push button if fan of Jim Halpert - which plays audio of Dwight Schrute saying idiot! */
+.idiot {
+  margin: 30px;
+  font-size: x-large;
+}
+
+#btn {
+  padding: 10px;
+  background-color: var(--beet-color1);
+  color: #fff;
+  border-radius: 3px;
+  font-size: x-large;
+}
+
+.idiot-btn:hover {
+  /* color: var(--dwight-shirt1); */
+  color: #FFFF00;
+}
+
+#font-arrow {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
 /* following is footer section styling */
 footer {
     text-align: center;
-    /* background-color: #c8ae4f; Dwight Schrute shirt color mustard */
     background-color: #8e6c51;
     color: #fff;
     text-shadow:

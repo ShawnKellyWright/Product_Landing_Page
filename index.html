@@ -12,6 +12,7 @@
     <meta property="og:url" content=""> <!-- TODO: update OG URL -->
     <meta property="og:image" content="/path/to/image"> <!-- TODO: update OG Image -->
     <meta property="og:type" content="">
+    <script src="https://use.fontawesome.com/518b0d31f3.js"></script>
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="manifest" href="site.webmanifest"> <!-- TODO: Update web app manifest file -->
     <link rel="icon" href="/favicon.ico"> <!-- TODO: Add favicon.ico file to project -->
@@ -30,9 +31,9 @@
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a class="" href="#">Quality</a></li>
-                    <li class="nav-link"><a class="" href="#">pricing</a></li>
-                    <li class="nav-link"><a class="" href="#pricing">Contact</a></li>
+                    <li class="nav-link"><a class="" href="#pricing">Pricing</a></li>
+                    <li class="nav-link"><a class="" href="#email">Contact</a></li>
+                    <li class="nav-link"><a class="" href="#social-media">Social-Media</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,7 +41,7 @@
             <section>
                 <!-- following is the video player section of Schrute Beet Farm -->
                 <div class="video-container">
-                    <video id="video" src="images/Schrute_Beet_Farm.mp4" width="640px" height="360px" controls
+                    <video id="video" src="video/Schrute_Beet_Farm.mp4" width="640px" height="360px" controls
                         type="video/mp4"></video>
                 </div>
             </section>
@@ -108,11 +109,19 @@
                     <input id="submit" type="submit" value="Submit" class="btn">
                 </form>
             </section>
+
+            <!-- following is push button which plays audio of Dwight Schrute saying idiot when pushed -->
+            <div class="idiot">
+                <p>If your a fan of Jim Halpert <i id="font-arrow" class="fa fa-long-arrow-down"></i><button
+                        id="btn">Push
+                        Me</button></p>
+            </div>
+
             <footer>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul id="social-media">
+                    <li><a id="stack-overflow" href=""></a></li>
+                    <li><a id="github" href=""></a></li>
+                    <li><a id="linked-in" href=""></a></li>
                 </ul>
                 <p>&copy;Copyright 2022 shawnCodeWright</p>
             </footer>
@@ -133,6 +142,18 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script>
+        const btn = document.getElementById("btn");
+
+        btn.onclick = () => {
+            // Here you will add path to local file you have
+            const audio = new Audio(
+                "audio/dwight_idiot.wav"
+            );
+
+            audio.play();
+        };
+    </script>
 </body>
 
 </html>
