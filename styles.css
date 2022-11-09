@@ -269,11 +269,11 @@ footer {
   } 
 } 
 
-#stck-ovrflw:hover > svg *,
+/* #stck-ovrflw:hover > svg *,
 #stck-ovrflw:hover, button:hover {
   background-color: var(--beet-color1);
   fill: #FFFFFF;
-}
+} */
 
 #git-hub-img:hover > svg *,
 #git-hub-img:hover, button:hover {
@@ -286,3 +286,11 @@ footer {
   background-color: var(--beet-color1);
   fill: #FFFFFF;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  #stck-ovrflw:hover {
+    background-color: var(--beet-color1);
+  }
+}
+
+
