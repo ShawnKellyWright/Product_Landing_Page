@@ -75,13 +75,24 @@ a:hover {
     color: #9b2238;
 }
 
+/* following changes navbar li items to column if screen is smaller than 450px */
+@media screen and (max-width: 450px) {
+  ul {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    gap: 3px
+  }
+} 
+
 /* following changes navbar li items to column if screen is smaller than 350px */
 @media screen and (max-width: 350px) {
   ul {
+    font-size: 1.2em;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    gap: 10px
+    gap: 15px;
   }
 } 
   
@@ -123,10 +134,6 @@ video {
 .product {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
-    /* width: calc(100% / 2); */
     max-width: 800px;
     margin: 20px;
     border: 1px solid #000;
@@ -171,8 +178,35 @@ blockquote {
 
 /* following is form styling */
 form {
-  margin: 30px;
-  font-size: x-large
+  /* margin: 30px 0 15px 0; */
+  margin-bottom: ;
+  font-size: x-large;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#message {
+  width: 19em;
+  height: 5em; 
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: var(--beet-color1);
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #FFFF00;
+}
+
+#submit {
+  font-size: 18px;
 }
 
 /* following is funny push button if fan of Jim Halpert - which plays audio of Dwight Schrute saying idiot! */
@@ -189,9 +223,9 @@ form {
   font-size: x-large;
 }
 
-.idiot-btn:hover {
-  /* color: var(--dwight-shirt1); */
-  color: #FFFF00;
+#btn:hover {
+  color: #000;
+  background-color: #FFFF00;
 }
 
 #font-arrow {
@@ -235,10 +269,20 @@ footer {
   } 
 } 
 
-#stck-ovrflw {
-
+#stck-ovrflw:hover > svg *,
+#stck-ovrflw:hover, button:hover {
+  background-color: var(--beet-color1);
+  fill: #FFFFFF;
 }
 
-#git-hub-img:hover {
-  color: var(--beet-color1);
+#git-hub-img:hover > svg *,
+#git-hub-img:hover, button:hover {
+  background-color: var(--beet-color1);
+  fill: #FFFFFF;
+}
+
+#linked-in-img:hover > svg *,
+#linked-in-img:hover, button:hover {
+  background-color: var(--beet-color1);
+  fill: #FFFFFF;
 }
