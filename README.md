@@ -1,6 +1,7 @@
 My Fourth freeCodeCamp.org Certification Project under Responsive Web Design course.<br>
 The following is the Objective:<br>
 Build a Product Landing Page, which I chose Schrute Farm Beets as fictional Product Landing Page. (I'm a fan of the US TV Show The Office)<br>
+To view site click here => https://shawnkellywright.github.io/Product_Landing_Page/ <br>
 
 Objective: Build an app that is functionally similar to https://product-landing-page.freecodecamp.rocks<br>
 
