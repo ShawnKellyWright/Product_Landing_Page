@@ -119,9 +119,16 @@
 
             <footer>
                 <ul id="social-media">
-                    <li><a id="stack-overflow" href=""></a></li>
-                    <li><a id="github" href=""></a></li>
-                    <li><a id="linked-in" href=""></a></li>
+                    <li><a id="stack-overflow" href="https://stackoverflow.com/users/9776467/shawn-wright"
+                            target="_blank"><img id="stck-ovrflw" src="images/stackoverflow_solidblack.svg"
+                                alt="stack overflow icon which links to my Stack overflow account"></a></li>
+                    <li><a id="github" href="https://github.com/ShawnKellyWright" target="_blank"><img id="git-hub-img"
+                                src="images/icons8-github.svg" alt="github icon which links to my Github account"></a>
+                    </li>
+                    <li><a id="linked-in"
+                            href="https://www.linkedin.com/in/shawn-wright-bb577b162?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM%2FdvHjgxTKmuhAU%2FQA8GnQ%3D%3D"
+                            target="_blank"><img src="images/linkedin_letters_only.svg"
+                                alt="linked in icon which links to my Linked in account"></a></li>
                 </ul>
                 <p>&copy;Copyright 2022 shawnCodeWright</p>
             </footer>
@@ -142,11 +149,13 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <!-- following is javascript code that plays audio of Dwight Schrute saying idiot when pushing button with id='btn' -->
     <script>
         const btn = document.getElementById("btn");
 
         btn.onclick = () => {
-            // Here you will add path to local file you have
+
             const audio = new Audio(
                 "audio/dwight_idiot.wav"
             );
@@ -154,6 +163,7 @@
             audio.play();
         };
     </script>
+
 </body>
 
 </html>
