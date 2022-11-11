@@ -29,7 +29,7 @@ li {
 }
 
 /* Main logo Schrute Farm Beets */
-.logo-div {
+.topnav {
     display: flexbox;
     justify-content: center;
     margin: 30px;
@@ -45,6 +45,7 @@ li {
 #nav-bar {
     background-color: var(--dwight-shirt2);
     padding: 1px;
+    margin: 30px 0 50px 0;
 }
 
  ul {
@@ -75,14 +76,55 @@ a:hover {
     color: #9b2238;
 }
 
-/* following changes navbar li items to column if screen is smaller than 450px */
-@media screen and (max-width: 450px) {
+/* following is a test for hamburger menu button (3 line icon) to drop down Main navbar list - Which I decided not to use */
+/* .topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  #header a.icon {
+    position: absolute; 
+    right: 0;
+    top: 0;
+    margin-top: 70px;
+    margin-right: 10px;
+    font-size: x-large;
+  } 
+
+  #header #nav-bar {
+    display: none;
+  } 
+} */
+
+/* @media screen and (min-width: 400px) {
+  #header a.icon {
+    display: none;
+  } 
+} */
+/* Above is a test for hamburger menu button (3 line icon) to drop down Main navbar list */
+
+/* following changes navbar li items & pricing boxes to column if screen is smaller than 450px */
+@media screen and (max-width: 900px) {
   ul {
     font-size: 1em;
     display: flex;
     justify-content: space-between;
     gap: 3px
   }
+
+  #pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  } 
+
 } 
 
 /* following changes navbar li items to column if screen is smaller than 350px */
@@ -100,7 +142,7 @@ a:hover {
 .video-container {
     display: flex;
     justify-content: center;
-     margin: 50px;
+     margin-bottom: 50px;
 }
 
 video {
@@ -137,15 +179,17 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* padding: 10px; */
 }
 
 .product {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    width: 300px;
     margin: 20px;
     border: 1px solid #000;
     border-radius: 3px;
+    max-width: fit-content;
   }
 
   .product > ol {
@@ -165,18 +209,20 @@ video {
     -1px  1px 0 #000,
     -1px  0   0 #000;
     letter-spacing: 2px;
-    padding: 15px 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
-    
   }
 
 /* Dwight Schrute quote section */
 .quote {
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 75px;
 }
 
 blockquote {
@@ -186,8 +232,7 @@ blockquote {
 
 /* following is form styling */
 form {
-  /* margin: 30px 0 15px 0; */
-  margin-bottom: ;
+  margin: 15px 0 20px 0;
   font-size: x-large;
   display: inline-flex;
   justify-content: center;
@@ -263,7 +308,7 @@ footer {
 
 /* following is social media styling */
 #social-media {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   gap: 50px;
 }
@@ -277,24 +322,7 @@ footer {
   } 
 } 
 
-/* #stck-ovrflw:hover > svg *,
-#stck-ovrflw:hover, button:hover {
-  background-color: var(--beet-color1);
-  fill: #FFFFFF;
-}
-
-#git-hub-img:hover > svg *,
-#git-hub-img:hover, button:hover {
-  background-color: var(--beet-color1);
-  fill: #FFFFFF;
-}
-
-#linked-in-img:hover > svg *,
-#linked-in-img:hover, button:hover {
-  background-color: var(--beet-color1);
-  fill: #FFFFFF;
-} */
-
+/* following fixes removing stuck hover button color on social media links, staying after pushing button on mobile device */
 @media (hover: hover) and (pointer: fine) {
   #stck-ovrflw:hover, #git-hub-img:hover, #linked-in-img:hover {
     background-color: var(--beet-color1);

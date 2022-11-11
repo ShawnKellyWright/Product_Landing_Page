@@ -22,10 +22,11 @@
 </head>
 
 <body>
-    <!-- Main content -->
+    <!-- following is main header - main logo and navbar menu -->
     <div id="page-wrapper">
         <header id="header">
-            <div class="logo-div">
+            <!-- <div class="logo-div"> -->
+            <div class="topnav">
                 <img class="main-logo" id="header-img" src="images/Schrute_Farm_Beets_logo_2.png"
                     alt="Schrute Farm Beets logo"> <!-- Custom logo I designed and made in photoshop -->
             </div>
@@ -33,10 +34,18 @@
                 <ul>
                     <li class="nav-link"><a class="" href="#pricing">Pricing</a></li>
                     <li class="nav-link"><a class="" href="#email">Contact</a></li>
-                    <li class="nav-link"><a class="" href="#social-media">Social-Media</a></li>
+                    <li class="nav-link"><a class="" href="#social-media">Social</a></li>
                 </ul>
             </nav>
+            <!-- Following is hamburger style menu button icon. I decided not to use. -->
+            <!-- <span class="menu-icon"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></span> -->
+
+            <!-- </div> goes with logo-div not using -->
         </header>
+
+        <!-- following is main section -->
         <main>
             <section>
                 <!-- following is the video player section of Schrute Beet Farm -->
@@ -57,12 +66,14 @@
                         alt="Jar of Beets with Schrute Farm logo">
                 </div>
             </section>
+
+            <!-- following is the 4 boxes that have pricing and size of jar of beets -->
             <section id="pricing">
                 <div class="product" id="small-jar">
                     <div class="product-header">Small size Jar of Beets</div>
                     <h2 class="product-h2">$10</h2>
                     <ol>
-                        <li>When eating these beets you will be immune to bears</li>
+                        <li>When eating these beets you will gain the respect of Angela</li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -72,7 +83,7 @@
                     <div class="product-header">Medium size Jar of Beets</div>
                     <h2 class="product-h2">$15</h2>
                     <ol>
-                        <li></li>
+                        <li>When eating these beets you will speak German</li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -82,7 +93,7 @@
                     <div class="product-header">Bear Size Jar of Beets</div>
                     <h2 class="product-h2">$20</h2>
                     <ol>
-                        <li></li>
+                        <li>When eating these beets you will be immune to bears</li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -157,6 +168,19 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <!-- following script controls the hamburger menu button on main navbar  -->
+    <!-- I decided not to use  -->
+    <!-- <script>
+        function myFunction() {
+            let x = document.getElementById("nav-bar");
+            if (x.style.display === "flex") {
+                x.style.display = "";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script> -->
 
     <!-- following is javascript code that plays audio of Dwight Schrute saying idiot when pushing button with id='btn' -->
     <script>
