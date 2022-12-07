@@ -1,27 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-    --beet-color1: #b42c45;
-    --beet-color2: #952138;
-    --dwight-shirt1: #c8ae4f;
-    --dwight-shirt2: #8e6c51;
+  --beet-color1: #b42c45;
+  --beet-color2: #952138;
+  --dwight-shirt1: #c8ae4f;
+  --dwight-shirt2: #8e6c51;
 }
 
 /* The following is custom font - same as the US TV show The Office logo - which is now set as a global font*/
 @font-face {
-    font-family: "AmericanTypewriter_Medium";
-    src: url(fonts/AmericanTypewriter_Medium.ttf);
+  font-family: "AmericanTypewriter_Medium";
+  src: url(fonts/AmericanTypewriter_Medium.ttf);
 }
 
 /* following is global styling for page */
 body {
-    color: black;
-    font-family: "AmericanTypewriter_Medium", sans-serif;
-    text-align: center;
+  color: black;
+  font-family: "AmericanTypewriter_Medium", sans-serif;
+  text-align: center;
 }
 
 li {
@@ -30,10 +30,10 @@ li {
 
 /* Main logo Schrute Farm Beets */
 .topnav {
-    display: flexbox;
-    justify-content: center;
-    margin: 30px;
-} 
+  display: flexbox;
+  justify-content: center;
+  margin: 30px;
+}
 
 .main-logo {
   width: auto;
@@ -43,37 +43,39 @@ li {
 
 /* The following is the Nav styling at top of screen */
 #nav-bar {
-    background-color: var(--dwight-shirt2);
-    padding: 1px;
-    margin: 30px 0 50px 0;
+  background-color: var(--dwight-shirt2);
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 1px;
+  margin: 30px 0 50px 0;
 }
 
- ul {
-    text-decoration: none;
-    text-shadow:
+ul {
+  text-decoration: none;
+  text-shadow:
     -1px -1px 0 #000,
-    0   -1px 0 #000,
+    0 -1px 0 #000,
     1px -1px 0 #000,
-    1px  0   0 #000,
-    1px  1px 0 #000,
-    0    1px 0 #000,
-    -1px  1px 0 #000,
-    -1px  0   0 #000;
-    letter-spacing: 1.5px;
-    font-size: 1.2em;
-    margin: 40px;
-    display: flex;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
+    1px 0 0 #000,
+    1px 1px 0 #000,
+    0 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px 0 0 #000;
+  letter-spacing: 1.5px;
+  font-size: 1.2em;
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
 }
 
-li > a {
-    text-decoration: none;
-    color: #fff
+li>a {
+  text-decoration: none;
+  color: #fff
 }
 
 a:hover {
-    color: #9b2238;
+  color: #9b2238;
 }
 
 /* following is a test for hamburger menu button (3 line icon) to drop down Main navbar list - Which I decided not to use */
@@ -117,15 +119,15 @@ a:hover {
   }
 
   #pricing {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  } 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-} 
+}
 
 /* following changes navbar li items to column if screen is smaller than 350px */
 @media screen and (max-width: 350px) {
@@ -136,13 +138,13 @@ a:hover {
     flex-direction: column;
     gap: 15px;
   }
-} 
-  
+}
+
 /* The following is the Video player styling */
 .video-container {
-    display: flex;
-    justify-content: center;
-     margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 video {
@@ -163,9 +165,9 @@ video {
 
 /* following is image of jar of beets with custom Schrute Farm Beets logo I made */
 .jar-container {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
 }
 
 .jar-image {
@@ -183,40 +185,39 @@ video {
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #000;
-    border-radius: 3px;
-    max-width: fit-content;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
 
-  .product > ol {
-    margin: 2px;
-  }
+.product>ol {
+  margin: 2px;
+}
 
-.product > .product-header {
-    background-color: var(--beet-color1);
-    color: white;
-    text-shadow:
+.product>.product-header {
+  background-color: var(--beet-color1);
+  color: white;
+  text-shadow:
     -1px -1px 0 #000,
-    0   -1px 0 #000,
+    0 -1px 0 #000,
     1px -1px 0 #000,
-    1px  0   0 #000,
-    1px  1px 0 #000,
-    0    1px 0 #000,
-    -1px  1px 0 #000,
-    -1px  0   0 #000;
-    letter-spacing: 2px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
+    1px 0 0 #000,
+    1px 1px 0 #000,
+    0 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px 0 0 #000;
+  letter-spacing: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 /* Dwight Schrute quote section */
 .quote {
@@ -226,8 +227,8 @@ video {
 }
 
 blockquote {
-    margin: 50px;
-    font-size: x-large;
+  margin: 50px;
+  font-size: x-large;
 }
 
 /* following is form styling */
@@ -243,7 +244,7 @@ form {
 
 #message {
   width: 19em;
-  height: 5em; 
+  height: 5em;
 }
 
 .btn {
@@ -290,20 +291,21 @@ form {
 
 /* following is footer section styling */
 footer {
-    text-align: center;
-    background-color: #8e6c51;
-    color: #fff;
-    text-shadow:
+  text-align: center;
+  background-color: #8e6c51;
+  border-top: 2px solid #000;
+  color: #fff;
+  text-shadow:
     -1px -1px 0 #000,
-    0   -1px 0 #000,
+    0 -1px 0 #000,
     1px -1px 0 #000,
-    1px  0   0 #000,
-    1px  1px 0 #000,
-    0    1px 0 #000,
-    -1px  1px 0 #000,
-    -1px  0   0 #000;
-    letter-spacing: 2px;
-    padding: 20px;
+    1px 0 0 #000,
+    1px 1px 0 #000,
+    0 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px 0 0 #000;
+  letter-spacing: 2px;
+  padding: 20px;
 }
 
 /* following is social media styling */
@@ -313,20 +315,21 @@ footer {
   gap: 50px;
 }
 
-@media  screen and (max-width: 350px)  {
+@media screen and (max-width: 350px) {
   #social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-  } 
-} 
-
-/* following fixes removing stuck hover button color on social media links, staying after pushing button on mobile device */
-@media (hover: hover) and (pointer: fine) {
-  #stck-ovrflw:hover, #git-hub-img:hover, #linked-in-img:hover {
-    background-color: var(--beet-color1);
   }
 }
 
+/* following fixes removing stuck hover button color on social media links, staying after pushing button on mobile device */
+@media (hover: hover) and (pointer: fine) {
 
+  #stck-ovrflw:hover,
+  #git-hub-img:hover,
+  #linked-in-img:hover {
+    background-color: var(--beet-color1);
+  }
+}
